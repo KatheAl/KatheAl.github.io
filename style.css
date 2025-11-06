@@ -29,7 +29,7 @@ li a {
 	padding-inline: 1rem;
 	padding-block: 0.7rem;
 	border-radius: 5px;
-	border: solid 1px rgb(255, 179, 0);
+	border: solid 1px rgb(255, 255, 255);
 	transition: all .3s ease-in-out;
 }
 
