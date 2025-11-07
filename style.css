@@ -28,16 +28,20 @@ li a {
 	background-color: rgb(29, 44, 43);
 	padding-inline: 1rem;
 	padding-block: 0.7rem;
-	border-radius: 5px;
+	border-radius: 10px;
 	border: solid 1px rgb(255, 255, 255);
 	transition: all .3s ease-in-out;
 }
 
-li a:hover {
+li:nth-child(even) a:hover {
 	background-color: rgb(255, 162, 0);
 	border: solid 1px #ffff00;
-	transform: scale(1.1) rotate(2deg);
-
+	transform: scale(1.1) rotate(5deg);
+}
+li:nth-child(odd) a:hover {
+	background-color: rgb(255, 162, 0);
+	border: solid 1px #ffff00;
+	transform: scale(1.1) rotate(-5deg);
 }
 
 ul {
@@ -45,9 +49,23 @@ ul {
 }
 
 .titulo h1 {
-
 	font-size: 5rem;
 	color: rgb(255, 255, 255);
+}
+
+ h1{
+	animation: glitch 3s infinite;
+ }
+@keyframes glitch {
+	0% {
+		text-shadow: #b4cf06 0px 0px, #0d22da 0px 0px;
+	}
+	50% {
+		text-shadow: #ff0000 -8px 0px, #60ffff 8px 0px;
+	}
+	100% {
+		text-shadow: #b4cf06 0px 0px, #0d22da 0px 0px;
+	}
 }
 
 .titulo p {
