@@ -32,6 +32,17 @@ li a {
 	border: solid 1px rgb(255, 255, 255);
 	transition: all .3s ease-in-out;
 }
+li button {
+	margin-block: 0.5rem;
+	display: inline-block;
+	text-decoration: none;
+	background-color: rgb(29, 44, 43);
+	padding-inline: 1rem;
+	padding-block: 0.7rem;
+	border-radius: 10px;
+	border: solid 1px rgb(255, 255, 255);
+	transition: all .3s ease-in-out;
+}
 
 li:nth-child(even) a:hover {
 	background-color: rgb(255, 162, 0);
@@ -43,8 +54,22 @@ li:nth-child(odd) a:hover {
 	border: solid 1px #ffff00;
 	transform: scale(1.1) rotate(-5deg);
 }
+li:nth-child(even) button:hover {
+	background-color: rgb(255, 162, 0);
+	border: solid 1px #ffff00;
+	transform: scale(1.1) rotate(5deg);
+}
+li:nth-child(odd) button:hover {
+	background-color: rgb(255, 162, 0);
+	border: solid 1px #ffff00;
+	transform: scale(1.1) rotate(-5deg);
+}
 
 ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	list-style-type: none;
 }
 
