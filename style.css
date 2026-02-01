@@ -14,12 +14,14 @@ html, body {
 }
 
 main {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-	gap: 2rem;
-	min-height: 80vh;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 80vh;
 }
 
 li a {
