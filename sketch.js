@@ -13,6 +13,7 @@ function setup() {
 
 function draw() {
 //  background(245, 230, 255);
+	background(192, 16, 104);
 //   for (let i = 0; i < sp.length-1; i++) {
 // 	noFill();
 // 	stroke(255,0,0);
