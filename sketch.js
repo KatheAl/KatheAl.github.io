@@ -5,6 +5,9 @@ function setup() {
   angleMode(DEGREES);
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
+  canvas.style('position', 'fixed');
+  canvas.style('top', '0');
+  canvas.style('left', '0');
   canvas.style('z-index', '-1');
 }
 
