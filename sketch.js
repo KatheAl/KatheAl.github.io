@@ -3,7 +3,9 @@ let sc = []
 
 function setup() {
   angleMode(DEGREES);
-  createCanvas(windowWidth, windowHeight);
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0, 0);
+  canvas.style('z-index', '-1');
 }
 
 function draw() {
